@@ -10,7 +10,9 @@ test.beforeAll(async() => {
     Runner = new ClassicRunner();
     Batch = new BatchInfo({name: 'Applitools assignment'});
     Config = new Configuration();
-    Config.setBatch(Batch);
+    Config
+        .setHostOS(process.platform)
+        .setBatch(Batch);
 })
 
 test.describe('Applitools assignment', () => {
