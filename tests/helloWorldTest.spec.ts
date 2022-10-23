@@ -8,7 +8,7 @@ export let Config: Configuration;
 
 test.beforeAll(async() => {
     Runner = new ClassicRunner();
-    Batch = new BatchInfo({name: 'Applitools assignment'});
+    Batch = new BatchInfo({name: 'Applitools test task'});
     Config = new Configuration();
     Config
         .setHostOS(process.platform)
@@ -23,7 +23,7 @@ test.describe('Applitools assignment', () => {
 
     await eyes.open(
         page,
-        'Applitools assignment demo',
+        'Applitools demo',
         test.info().title,
         { width: 1024, height: 768 }
     );
