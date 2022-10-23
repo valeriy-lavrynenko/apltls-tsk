@@ -1,0 +1,24 @@
+{
+  "name": "apltls-tsk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "npx playwright test --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xasatx/apltls-tsk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xasatx/apltls-tsk/issues"
+  },
+  "homepage": "https://github.com/xasatx/apltls-tsk#readme",
+  "devDependencies": {
+    "@applitools/eyes-playwright": "^1.12.7",
+    "@playwright/test": "^1.27.1"
+  }
+}
